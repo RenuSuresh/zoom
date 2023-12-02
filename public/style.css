@@ -1,0 +1,59 @@
+#video-grid{
+  display: flex;
+  justify-content: center;
+
+}
+
+video{
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+.main{
+  height: 100vh;
+  display: flex;
+
+
+}
+.main__left{
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__videos{
+  flex-grow: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__right{
+  flex: 0.2;
+}
+.main__controls{
+  color: white;
+  background-color: black;
+  display: flex;
+    justify-content: space-between;
+}
+.main__controls__block{
+  display: flex;
+  gap: 24px
+
+}
+
+.main__controls__button{
+  cursor: pointer;
+  padding: 16px;
+}
+
+
+.main__right{
+  display: flex;
+  flex-direction: column;
+}
+
+.main__chat__window{
+  overflow-y: scroll;
+}
